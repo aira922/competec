@@ -23,3 +23,12 @@ public class Main
 			System.out.println("Menor: "+menorNumero);
 	}
 }
+int lin = 2;
+int col = 2;
+	int tabela [][]= {{0,1}, {2,3}};
+for(int i =0; i <lin; i++){
+    for(int j =0;j<col;j ++){
+    System.out.print(tabela[i][j] + " ");
+}
+System.out.println(" ");
+}

@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    String[] nome = new String[3];
+	    double[] precos = new double[3];
+	    int[] qtd = new int[3];
+	    double[] valorTotal = new double[3];
+	    double maiorValor = 0;
+	    int x = 0;
+	for(int i=0; i<3; i++){
+	    System.out.println("Digite o nome do " + (i+1)+ "º produto:");
+	    nome[i] = sc.next();
+	    System.out.println("Digite o preço do " + (i+1)+ "º produto:");
+	    precos[i] = sc.nextDouble();
+	    System.out.println("Digite a quantidade do " + (i+1)+ "º produto:");
+	    qtd[i]= sc.nextInt();
+	}
+	for(int i=0; i<3; i++){
+	    valorTotal[i] = precos[i]*qtd[i];
+	    if(valorTotal[i]>maiorValor){
+	        maiorValor = valorTotal[i];
+	        x = i;
+	    }
+	    System.out.println("O valor total em estoque do(a) " + nome[i] + " é R$" + valorTotal[i] + ".");
+	}
+	System.out.println("O produto '"+ nome[x] + "' tem o maior valor de estoque.");
+	
+	
+}
+}

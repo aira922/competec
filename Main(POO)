@@ -14,3 +14,21 @@ public class Main {
       System.out.println(aluno5.getMedia());
   }
 }
+
+
+
+public class Main {
+  public static void main(String[] args) {
+    Aluno aluno1 = new Aluno("João", 10, 8);
+    Aluno aluno2 = new Aluno("Maria", 9, 7);
+    Aluno aluno3 = new Aluno("Pedro", 8, 6);
+    Aluno aluno4 = new Aluno("Ana", 7, 5);
+    Aluno aluno5 = new Aluno("Carlos", 6, 4);
+
+    aluno1.calculaMedia(aluno1.nota1, aluno1.nota2);
+    aluno2.calculaMedia(aluno2.nota1, aluno2.nota2);
+    aluno3.calculaMedia(aluno3.nota1, aluno3.nota2);
+    aluno4.calculaMedia(aluno4.nota1, aluno4.nota2);
+    aluno5.calculaMedia(aluno5.nota1, aluno5.nota2);
+  }
+}

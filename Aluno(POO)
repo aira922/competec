@@ -1,3 +1,4 @@
+//AlunoGet
 public class AlunoGet {
   private String nome;
   private double nota1;
@@ -13,6 +14,7 @@ public class AlunoGet {
   }
   }
 
+//Aluno
 public class Aluno {
   public String nome;
   public double nota1;
@@ -29,4 +31,22 @@ public class Aluno {
     System.out.println("A média do aluno " + nome + " é: " + media);
   }
   
+}
+
+//Main
+public class Main {
+  public static void main(String[] args){
+      AlunoGet aluno1 = new AlunoGet("João", 10, 8);
+      AlunoGet aluno2 = new AlunoGet("Maria", 9, 7);
+      AlunoGet aluno3 = new AlunoGet("Pedro", 8, 6);
+      AlunoGet aluno4 = new AlunoGet("Ana", 7, 5);
+      AlunoGet aluno5 = new AlunoGet("Carlos", 6, 4);
+
+    System.out.println(aluno1.getMedia());
+    System.out.println(aluno1.getMedia());
+      System.out.println(aluno2.getMedia());
+      System.out.println(aluno3.getMedia());
+      System.out.println(aluno4.getMedia());
+      System.out.println(aluno5.getMedia());
+  }
 }

@@ -1,0 +1,47 @@
+// Classe FUncionário
+public abstract class Funcionario {
+  public String nome;
+
+  public abstract void calcularSalario();
+  
+}
+
+
+// Classe Gerente
+public class Gerente extends Funcionario{
+double bonus;
+  
+  public void calcularSalario(){
+  double salario = 3000 + bonus;
+    System.out.println("O salário do gerente é: " + salario);
+  }
+}
+
+
+//Classe Vendedor
+public class Vendedor extends Funcionario{
+  double comissao;
+
+ public void calcularSalario(){
+    double salario = 2000 + comissao;
+    System.out.println("O salário do vendedor é: " + salario);
+ } 
+}
+
+
+//Classe Main
+public class Main {
+
+public static void main(String[] args){
+  Gerente gerente1 = new Gerente();
+  gerente1.bonus = 1000.00;
+  gerente1.nome = "João";
+
+  Vendedor vendedor1 = new Vendedor();
+  vendedor1.comissao = 100.00;
+  vendedor1.nome = "Catarina";
+  
+  vendedor1.calcularSalario();
+  gerente1.calcularSalario();
+}
+}
